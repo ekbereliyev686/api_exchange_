@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <form action="{% url 'index' %}" method="POST">
+  
+        {% csrf_token %}
+
+    <select name="first" >
+        <option value="usd">usd</option>
+        <option value="azn">azn</option>
+        <option value="eur">eur</option>
+    </select>
+    <select name="last" >
+        <option value="azn">azn</option>
+        <option value="usd">usd</option>
+        <option value="eur">eur</option>
+    </select>
+    <input type="number" name="money">
+    <button>Tesdiq Et</button>
+
+</form>
+{{data}}
+</body>
+</html>
